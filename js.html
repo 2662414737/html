@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addPara();">添加文本</button>
+        <button onclick="addimg();">添加图片</button>
+        <button onclick="addTxt();">添加文本框</button>
+        <button onclick="addoptions();">添加选项</button>
+        <div id="container">
+        </div>
+    
+</body>
+<script type="text/javascript">
+// 插入文本
+     function addPara(){
+        //获取容器
+        var div = document.getElementById("container");
+        // 方式一
+        // //创建p元素
+        // var p = document.createElement("p");
+        // //创建文本节点
+        // var txt = document.createTextNode("这是文本");
+        // //将文本设置到p标签中
+        // p.appendChild(txt);
+        // //将p标签设置到div中
+        // div.appendChild(p);
+       
+        // // 方式二
+        // // 创建p元素
+        // var p = document.createElement("p");
+        // //给p元素赋值
+        // p.innerHTML="这是文本";
+        // // //将p标签设置到div中
+        // div.appendChild(p);
+
+        //方式三
+        var p = "<p>这是文本</p>"
+        div.innerHTML += p;
+    }</script>
+
+</html>

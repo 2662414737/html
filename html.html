@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- html5的版本声明 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html基础</title>
+    <link rel="stylesheet" href="引入的css文件的路径">
+    <script src="引入的js路径" type="text/javascript" charset="UTF-8"></script>
+</head>
+<body bgcolor="pink" text="#ffffff">
+    <h1 id="top">html基础</h1>
+    <p>VSCode常用插件<br>vissual&nbsp;Studio&nbsp;IntelliCode;&nbsp;Ai自动提示插件<br>Open_In_Browser&nbsp;提供在浏览器查看页面的功能
+    <br>Quokka &nbsp;根据编写的代码提供实时反馈</p>
+    <div class="bq">
+    <h2>标签</h2>
+    <p>单标签 <br>
+            无属性 <标签名/><br>
+            有属性 <标签名 属性名 = “属性值 ”/>
+    </p>
+    <p>双标签 <br>
+        无属性 <标签名> </标签名><br>
+        有属性 <标签名 属性名 = “属性值 ”> </标签名>
+    </div>
+    <div class="ztjg">
+        <h2>整体结构</h2>
+        <p> < html> < /html>..表示当前是一个网页<br></p>
+        <p> < head> < /head>..头部信息<br></p>
+        <p> < body> < /body>..身体部分</p>
+    </div>
+    <div  class="cybq">
+        <h2>常用标签</h2>
+        <p>所有标签都有的属性<br>id属性&nbsp;用来标识元素的唯一性<br>name属性&nbsp;提交数据的参数名
+            <br>style属性&nbsp;设置行内元素的具体样式<br>class属性&nbsp;设置元素的样式名</p>
+        <p>body 整体背景 bgcolor<br>整体字体颜色 text</p>
+        <p>< meta > 提供的信息是用户不可见的，一般用来定义页面的信息的名称，关键字，作者等。 </p>
+        <p>hr标签 水平线标签 width宽度 align 对齐方式 left, right ,center ;size 水平线粗细</p>
+        <p>p 段落标签 align 对齐方式 left,right,center,justify</p>
+        <p>&,nbsp空格标签 </p>
+        <p>列表<br>无序列表<br>< ul>< li></ li>< li></ li>< /ul><br>type 列表的图标<br> square 实心方块<br>
+             circle 空心圆<br> disc 实心圆</p>
+        <p>有序列表<br>< ol>< li>< /li>< li>< /li><  /ol> <br>type 列表的图标<br> 1.<br>a<br>A<br>i<br>I<br></p>
+        <p>a标签 超链接标签用于跳转页面 < a href="页面名称">跳转按钮< /a><br><a href="https://www.runoob.com/"></a>> 菜鸟教程</a></p>
+        <p>常用属性<br>href&nbsp;指定路径<br>target 窗口打开的方式 &nbsp; 1._self &nbsp;当前窗口打开<br>2._blank&nbsp;新开窗口打开</p>
+        <p>img标签 < img src="图片地址" title="文字" alt="图片显示失败时显示的文字"/></p>
+        <p>表格标签 table 表示表格<br>tr表示表格的行<br>td表示表格的标准单元格<br>th表示表格的表头单元格<br>border
+             表示表格的边框<br>width 表格的宽度</p>
+             <table border="1" width="500px" style="border-collapse: collapse;" align="center">
+                <tr>
+                    <th>姓名</th>
+                    <th>学号</th>
+                    <th>身份证</th>
+                    <th>性别</th>
+                </tr>
+                <tr align="center">
+                    <td>刘少友</td>
+                    <td>201</td>
+                    <td>5130</td>
+                    <td>男</td>
+                </tr>
+                <tr align="center">
+                    <td>终结</td>
+                    <td>111</td>
+                    <td>111</td>
+                    <td>女</td>
+                </tr>
+            </table>
+        <p>表单 form<br>表单用于向服务器传递数据。<br>表单提交时，必须设置表单元素的name属性值，否则无法获取数据。
+           <br> 表单需要结合表单元素使用。<br>常用属性<br>action提交表单的地址<br>method提交方式
+        <br>1.GET提交<br>2.POST提交<br>target提交数据打开的方式<br>_self当前窗口<br>_blank空白窗口</p> 
+        <p>GET请求与POST请求的区别：（post请求需要服务器的支持）<br>
+        1.get请求时参数会跟在浏览器地址栏后面，POST请求不会<br>
+        2.get请求相对于post请求不那么安全<br>
+        3.get请求传递数据长度有限，post请求基本没有限制<br>
+        4.get请求比post请求快<br>
+        5.get请求有缓存（数据存放在浏览器中，即本地磁盘），post没有</p> 
+        <P>input标签 <br>type &nbsp;元素的类型<br>1.text &nbsp;文本框<br>2.password&nbsp;密码框<br>3.radio&nbsp;单选框（需要使用name属性设置为一组）
+            <br>4.checkbox&nbsp;复选框<br>5.file&nbsp;上传文件（上传文件的表单需要设置一个 enctype="multipart/form-data"）<br>6.hidden&nbsp;隐藏submit域
+            <br>7.button&nbsp;普通按钮<br>8.submit&nbsp;提交按钮<br>9.reset&nbsp;重置按钮<br>10.date&nbsp;日期框
+            <br>value&nbsp;元素的值<br>readonly&nbsp;只读状态<br>maxlength&nbsp;最大输入限制</P>
+        <p>textarea 文本域&nbsp;&nbsp;cols可见宽度rows可见行数</p>
+        <p>label标签for当for的值与id属性相同时点击label标签会自动</p>
+        <input type="text" name="rad"/>
+        
+    </div>
+    <a href="#top">回到顶部</a>
+    
+</body>
+</html>
